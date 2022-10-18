@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+body{
+    background-color: #131315;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+.main-div{
+    background-color:#242026;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(143,124,236,0.8);
+    border-radius: 10px;
+}
+.main-div h3{
+    text-align: center;
+    color: #8f7cec;
+    margin-block: 10px;
+}
+.wrapper{
+    position: relative;
+}
+.wrapper input{
+    width: 100vh;
+    background-color:transparent;
+    height:50px;
+    border: none;
+    border-bottom: 3px solid white;
+    padding-left: 8px;
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+}
+.wrapper label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: all 0.4s ease;
+    pointer-events: none;
+    font-size: 20px;
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+input:focus + label,
+input:valid + label{
+    font-size: 15px;
+    top:7px;
+    padding: 5px;
+    color: #8f7cec;
+}
+.tenurity label{
+    color:#8f7cec ;
+    font-size: 15px;
+    padding: 5px;
+}
+.tenurity select{
+    width: 100vh;
+    font-size: 20px;
+    margin: 5px;
+    padding-left: 8px;
+    outline: none;
+    height: 50px;
+    color: white;
+    background-color: #242026;
+} 
+#emi-btn{
+    padding: 10px 20px;
+    color:#8f7cec;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border: 1px solid white;
+    margin-block: 10px;
+    background-color:#242026;
+}
+#emi-btn:hover{
+    background-color:#8f7cec ;
+    color: white;
+    border:1px solid#242026;
+    box-shadow: 0 0 15px rgba(143,124,236,0.8);
+}
+.main-div h3 span{
+    color: white;
+}
+
